@@ -42,18 +42,50 @@ This exercise introduced a structured approach to documenting a cybersecurity in
 
 #### Case 2 – Malicious Attachment and File Analysis
 
+### Entry 2 – Malicious File Investigation
+
+**Date:** May 9, 2024
+**Activity:** Incident Handler's Journal
+**Tools:** VirusTotal
+
 **Scenario**
-...
 
-**Investigation**
-- SHA-256 hash
-- VirusTotal
+A financial services company detected suspicious activity on an employee's workstation. The employee had received an email containing a password-protected spreadsheet attachment. The password was provided in the email, and after the employee opened the spreadsheet, a malicious payload was executed on the computer.
 
-**Findings**
-...
+The incident was detected after multiple unauthorized executable files were created on the workstation.
 
-**Security considerations**
-...
+**Incident Analysis**
+
+I documented the incident using the 5 W's framework:
+
+* **Who:** An employee at a financial services company
+* **What:** A malicious file was delivered through an email attachment and executed on the employee's workstation.
+* **When:** The employee downloaded and opened the file at approximately 1:13 p.m.; multiple unauthorized executable files were created around 1:15 p.m.
+* **Where:** The employee's workstation
+* **Why:** The incident was initiated through a malicious email attachment. The successful execution of the payload also indicated a need for stronger awareness and procedures for handling suspicious files and attachments.
+
+**File and IoC Investigation**
+
+I retrieved the malicious file and generated a SHA-256 hash to use as a unique identifier for the file. I then used VirusTotal to investigate the hash and gather additional threat intelligence.
+
+The investigation included reviewing the file's detection results and related information to determine whether the file was malicious and identify associated indicators of compromise (IoCs). The activity used the Pyramid of Pain framework to categorize IoCs such as hashes, IP addresses, domains, network or host artifacts, tools, and attacker tactics, techniques, and procedures (TTPs).
+
+**Security Considerations**
+
+The incident highlighted several areas that could reduce the risk of similar attacks:
+
+* Employees should receive security awareness training covering suspicious emails, password-protected attachments, and malicious files.
+* Procedures should be in place for reporting and handling suspicious attachments.
+* Suspicious files should be isolated and investigated before being allowed to execute.
+* File hashes and other IoCs can be used to support detection and investigation of related malicious activity.
+* Threat-intelligence sources such as VirusTotal can provide additional context when investigating suspicious files.
+
+**What I Learned**
+
+This exercise provided hands-on experience with a basic malware investigation workflow: identifying a suspicious file, generating a SHA-256 hash, investigating the hash in VirusTotal, and identifying related indicators of compromise.
+
+It also demonstrated how individual artifacts can be connected to broader threat intelligence and how IoCs can support the investigation and detection of security incidents.
+
 
 #### Case 3 – Web Application Vulnerability and Data Exposure
 
