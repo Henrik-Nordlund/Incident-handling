@@ -129,22 +129,36 @@ The review identified several measures to reduce the risk of similar incidents:
 This exercise demonstrated the importance of the post-incident review phase. A final incident report can be used to establish the root cause, reconstruct the timeline, assess the impact, document the organization's response, and identify security improvements to reduce the risk of recurrence.
 
 
-#### Case 4 – Phishing and Malicious Domain Investigation
+### Entry 4 – Phishing Investigation with Google Chronicle
+
+**Date:** May 13, 2024
+**Activity:** Incident Handler's Journal
+**Tools:** Google Chronicle
 
 **Scenario**
-...
 
-**Investigation**
-- Google Chronicle
-- Domain investigation
-- Affected assets
+A financial services company detected a suspicious phishing email received by an employee. The email contained a link to the domain `signin.office365x24.com`, which was designed to resemble a legitimate service from a well-known vendor.
 
-**Findings**
-...
+I investigated the domain using Google Chronicle. The investigation showed that multiple assets had accessed the domain and that some of them had subsequently sent data to it.
 
-**Security considerations**
-...
+**Incident Analysis**
 
-#### What I learned
+I documented the investigation using the 5 W's framework:
 
-...
+* **Who:** The attacker behind the phishing activity was not identified. The investigation identified three affected assets: `ashton-davidson-pc`, `emil-palmer-pc`, and `warren-morris-pc`.
+* **What:** Eight assets had accessed the suspicious domain. Three of those assets sent POST requests to the domain, indicating interaction with the phishing site.
+* **When:** Activity involving the domain was observed on January 31, 2023, and again on July 9, 2023.
+* **Where:** The activity involved assets within the company's office environment in Great Britain (GB).
+* **Why:** The domain used a name similar to a well-known service, which could make the phishing link appear legitimate to users.
+
+**Security Considerations**
+
+The exercise highlighted the importance of security awareness when dealing with links received through email. Users should be able to recognize suspicious domains and verify links before interacting with them.
+
+The investigation also demonstrated the value of examining endpoint and network activity in a SIEM when investigating potentially malicious domains.
+
+**What I Learned**
+
+This exercise provided experience using Google Chronicle to investigate suspicious domain activity and identify affected assets.
+
+I learned how SIEM data can be used to trace activity associated with a suspicious domain, identify systems that accessed it, and investigate subsequent network activity.
