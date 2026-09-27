@@ -26,10 +26,14 @@ I documented the incident using the 5 W's framework:
 
 The exercise also considered two questions:
 
-* How could the healthcare company reduce the risk of a similar incident occurring again?
-* Should the company pay the ransom to regain access to the encrypted files?
+* **How could the healthcare company reduce the risk of a similar incident occurring again?**
+  Security awareness training could help employees recognize targeted phishing emails and avoid opening malicious attachments. Critical data should also be backed up and available for recovery in the event of a ransomware attack.
 
-The exercise highlighted the relationship between phishing, initial access, malware deployment, ransomware and business disruption, while also considering preventive security measures and incident-response decisions.
+* **Should the company pay the ransom to regain access to the encrypted files?**
+  The exercise considered the circumstances surrounding the ransom demand and whether paying the ransom would be appropriate.
+
+The exercise highlighted the relationship between phishing, initial access, malware deployment, ransomware and business disruption, while also considering preventive security measures, backup and recovery, and incident-response decisions.
+
 
 **What I learned**
 
