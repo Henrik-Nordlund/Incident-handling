@@ -2,21 +2,39 @@
 
 #### Overview
 
-[Google Cybersecurity Professional Certificate + simulated incident scenarios]
-
 #### Case 1 – Ransomware and Spear Phishing
 
+**Date:** May 6, 2024
+**Activity:** Incident Handler's Journal
+**Tools:** None
+
 **Scenario**
-...
 
-**Investigation**
-...
+A small U.S. healthcare clinic experienced a ransomware incident after targeted phishing emails were sent to several employees. A malicious attachment installed malware, allowing the attackers to gain access to the company's network and deploy ransomware. Critical files, including patient data, were encrypted, causing major disruption to business operations. The attackers demanded a large ransom in exchange for the decryption key.
 
-**Findings**
-...
+**Incident Analysis**
 
-**Security considerations**
-...
+I documented the incident using the 5 W's framework:
+
+* **Who:** An organized group of unethical hackers
+* **What:** A ransomware security incident
+* **When:** Tuesday at approximately 9:00 a.m.
+* **Where:** A healthcare organization
+* **Why:** The attackers gained access through a phishing attack and subsequently deployed ransomware. The ransom demand indicated a likely financial motivation.
+
+**Security Considerations**
+
+The exercise also considered two questions:
+
+* How could the healthcare company reduce the risk of a similar incident occurring again?
+* Should the company pay the ransom to regain access to the encrypted files?
+
+The exercise highlighted the relationship between phishing, initial access, malware deployment, ransomware and business disruption, while also considering preventive security measures and incident-response decisions.
+
+**What I learned**
+
+This exercise introduced a structured approach to documenting a cybersecurity incident and analyzing an attack from initial access through operational impact. It also reinforced the importance of considering both technical controls and organizational security practices when responding to security incidents.
+
 
 #### Case 2 – Malicious Attachment and File Analysis
 
