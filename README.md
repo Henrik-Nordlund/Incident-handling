@@ -40,9 +40,7 @@ The exercise highlighted the relationship between phishing, initial access, malw
 This exercise introduced a structured approach to documenting a cybersecurity incident and analyzing an attack from initial access through operational impact. It also reinforced the importance of considering both technical controls and organizational security practices when responding to security incidents.
 
 
-#### Case 2 – Malicious Attachment and File Analysis
-
-### Entry 2 – Malicious File Investigation
+#### Case 2 – Malicious File Investigation
 
 **Date:** May 9, 2024
 **Activity:** Incident Handler's Journal
@@ -87,21 +85,49 @@ This exercise provided hands-on experience with a basic malware investigation wo
 It also demonstrated how individual artifacts can be connected to broader threat intelligence and how IoCs can support the investigation and detection of security incidents.
 
 
-#### Case 3 – Web Application Vulnerability and Data Exposure
+### Entry 3 – Post-Incident Review: E-Commerce Data Breach
+
+**Date:** May 11, 2024
+**Activity:** Incident Handler's Journal
+**Tools:** None
 
 **Scenario**
-...
 
-**Investigation**
-...
+A mid-sized retail company experienced a data breach affecting approximately 50,000 customer records. The company generated around 80% of its revenue through e-commerce.
 
-**Findings**
-- Forced browsing
-- Unauthorized access to customer data
-- Approximately 50,000 records affected
+The root cause was a vulnerability in the company's e-commerce web application. The vulnerability allowed an attacker to perform a forced browsing attack by modifying the order number in the URL of a purchase confirmation page. This provided unauthorized access to customer personally identifiable information (PII) and financial information.
 
-**Security considerations**
-...
+The attacker subsequently contacted an employee and demanded payment in exchange for not publicly releasing the stolen data.
+
+**Incident Analysis**
+
+I reviewed the incident using the 5 W's framework:
+
+* **Who:** An external attacker who exploited a vulnerability in the e-commerce application.
+* **What:** A forced browsing attack enabled unauthorized access to customer PII and financial information.
+* **When:** The attacker first contacted an employee at approximately 3:13 p.m. on December 22, 2022. The data theft itself occurred before this communication, as indicated by the subsequent analysis of web server logs.
+* **Where:** The company's e-commerce web application and associated web server.
+* **Why:** A vulnerability in the e-commerce application allowed unauthorized access to customer purchase information.
+
+**Post-Incident Review**
+
+The security team analyzed the web application and associated web server logs to determine the root cause and scope of the incident. The logs showed an unusually high volume of sequential customer order requests, providing evidence of the attacker's activity.
+
+The organization disclosed the breach to affected customers and offered free identity protection services.
+
+**Recommendations**
+
+The review identified several measures to reduce the risk of similar incidents:
+
+* Perform routine vulnerability scanning and penetration testing.
+* Implement access controls to restrict access to authorized users.
+* Use URL allowlisting to restrict access to approved URL ranges.
+* Require authentication before allowing access to protected content.
+
+**What I Learned**
+
+This exercise demonstrated the importance of the post-incident review phase. A final incident report can be used to establish the root cause, reconstruct the timeline, assess the impact, document the organization's response, and identify security improvements to reduce the risk of recurrence.
+
 
 #### Case 4 – Phishing and Malicious Domain Investigation
 
