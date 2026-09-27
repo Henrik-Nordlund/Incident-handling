@@ -2,7 +2,7 @@
 
 #### Overview
 
-#### Case 1 – Ransomware and Spear Phishing
+#### Case 1 – Ransomware Incident
 
 **Date:** May 6, 2024
 **Activity:** Incident Handler's Journal
@@ -16,11 +16,11 @@ A small U.S. healthcare clinic experienced a ransomware incident after targeted 
 
 I documented the incident using the 5 W's framework:
 
-* **Who:** An organized group of unethical hackers
+* **Who:** An organized group of attackers
 * **What:** A ransomware security incident
 * **When:** Tuesday at approximately 9:00 a.m.
 * **Where:** A healthcare organization
-* **Why:** The attackers gained access through a phishing attack and subsequently deployed ransomware. The ransom demand indicated a likely financial motivation.
+* **Why:** The attackers gained access through targeted phishing emails containing a malicious attachment. The incident also suggests that the affected employees may have lacked sufficient security awareness to identify and respond appropriately to the phishing attempt.
 
 **Security Considerations**
 
